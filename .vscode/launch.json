@@ -1,0 +1,210 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "AttendanceExample",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter4.PeopleCounter.AttendanceExample",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "AttendanceExample",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter4.AttendanceExample",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "TESTFinalRandPlayerOrder",
+            "request": "launch",
+            "mainClass": "personal.homebrew.RandPlayerOrder.TESTFinalRandPlayerOrder",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "MapApp",
+            "request": "launch",
+            "mainClass": "personal.homebrew.RandGamemode.MapApp",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Lab5App",
+            "request": "launch",
+            "mainClass": "csc120.week5.feb29.Lab5App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "RandDeathmatchMapv1",
+            "request": "launch",
+            "mainClass": "personal.homebrew.RandGamemode.RandDeathmatchMapv1",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "RandPlayerOrderv3",
+            "request": "launch",
+            "mainClass": "personal.homebrew.RandPlayerOrder.RandPlayerOrderv3",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "FinalRandPlayerOrder",
+            "request": "launch",
+            "mainClass": "personal.homebrew.RandPlayerOrder.FinalRandPlayerOrder",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "FinalRandPlayerOrder",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.abstraction.FinalRandPlayerOrder",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "RandPlayerOrderv3",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.abstraction.RandPlayerOrderv3",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "RandPlayerOrderv4",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.abstraction.RandPlayerOrderv4",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj2.test",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "RandPlayerOrderv2",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.abstraction.RandPlayerOrderv2",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Lab18PaintingAWall",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.Lab18PaintingAWall",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "DataManipulationToShowOverflow",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.chapterExamples.DataManipulationToShowOverflow",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "RandomNumbers3x10x4",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.chapterExamples.RandomNumbers3x10x4",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Examples",
+            "request": "launch",
+            "mainClass": "csc120.week4.feb22.Examples",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Temp",
+            "request": "launch",
+            "mainClass": "csc120.week4.feb22.Temp",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Lab3App",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.Lab21DataTypeClasses.Lab3App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Project2",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj2.Project2",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "csc120.week4.feb20.Test",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Lab3App",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.Lab21CardClass.Lab3App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "RandPlayerOrderv1",
+            "request": "launch",
+            "mainClass": "csc120.zybooks.chapter3.abstraction.RandPlayerOrderv1",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Project1",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj1.Project1",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "myprogram",
+            "request": "launch",
+            "mainClass": "csc120.jan25.myprogram",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "brocode.test",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "myprogram",
+            "request": "launch",
+            "mainClass": "csc120.Jan25.myprogram",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "test(1)",
+            "request": "launch",
+            "mainClass": "csc120.Jan25.test",
+            "projectName": "java_a720e17a"
+        }
+    ]
+}

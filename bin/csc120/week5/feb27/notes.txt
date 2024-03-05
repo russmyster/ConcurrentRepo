@@ -1,0 +1,22 @@
+Feb. 27th, 2024
+
+scope is a reference to the location(s) where certain variables can be used
+- e.g. if int value is located within a class, it can only be accessed within that class
+
+the card constructor is a parameterized constructor, since it has a parameter in its header
+--> the parameter type is int
+
+an example of a "local" variable is "suitNumber," since it is only declared within the Card constructor
+
+all accessors have the word get in front of it (not necessarily the other way around ofc)
+- getValue() is a method that is located in the Card class
+--> to find getValue() of a card, we must do card1.getValue();
+
+String str = card1.toString();
+- is a valid statement because the toString method itself instantiates a string for you
+--> str stores the *address* to the string that the toString method instantiated
+
+public Card dealCard()
+- is a valid statement too, as dealCard 
+
+

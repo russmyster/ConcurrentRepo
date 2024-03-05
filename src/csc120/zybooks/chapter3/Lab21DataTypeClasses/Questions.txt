@@ -1,0 +1,63 @@
+Question 1: What is the syntax error message?
+Lab3App.java:4: error: incompatible types: Deck cannot be converted to Card
+    Card theDeck = new Deck();
+                   ^
+1 error
+
+Question 2: What do you think this error means?
+The statement is returning a deck object, but we are trying to store it in a variable that is of type Card, not Deck.
+Therefore, a variable mismatch error is expected.
+e.g. 
+Deck theDeck = new Deck();
+
+Question 3: What is the syntax error message?
+Lab3App.java:5: error: method shuffleDeck in class Deck cannot be applied to given types;
+    theDeck.shuffleDeck( true );
+           ^
+  required: no arguments
+  found: boolean
+  reason: actual and formal argument lists differ in length
+1 error
+
+Question 4: What do you think this error means?
+The compiler likely detected a mismatch in the arguments we tried 
+to pass to shuffleDeck() (which takes none), and the arguments it expected.
+
+Question 5: Look at the header for this method in the documentation. Why did you get this syntax error?
+The header for shuffleDeck() shows that it takes no arguments, 
+but we tried to assign it one, a boolean of value true, causing a "syntax" error.
+
+Question 6: Are there any parameters specified for this method? If so, what is/are the data type(s) of the parameter(s)?
+No, the dealCard() method outputs a card (which are of the integer data type), *but it does not take any inputs itself*.
+
+Question 7: What is the data type of the return value?
+Card.
+
+Question 8: Are there any parameters specified for this method? If so, what is/are the data type(s) of the parameter(s)?
+No, the toString() method does not take any inputs itself, but returns an output of type string.
+
+Question 9: What is the data type of the return value?
+String.
+
+Question 10: Run the program. What is displayed in the message pane at the bottom of the screen?
+"11 of clubs" is displayed.
+
+Question 11: Are there any parameters specified for this method? If so, what is/are the data type(s) of the parameter(s)?
+No, the getValue method returns the integer value that is stored in the variable being utilized.
+
+Question 12: What is the data type of the return value?
+Int.
+
+Question 13: Why do we need both a toString method and a getValue method for this class? Don’t both of them tell us what value the card has?
+The toString() method will get you the output of the card along with what type of card it is, 
+whereas the getValue method will get you the integer value of the card alone in an output statement.
+
+Question 14: Are there any parameters specified for this method? If so, what is/are the data type(s) of the parameter(s)?
+No, the getPointValue() method does not take any inputs itself, but returns an output of type int.
+
+Question 15: What is the data type of the return value?
+Int.
+
+Question 16: Why do we need both a getValue() method and a getPointValue() method for this class? What is the difference between the values that get returned? (You might need to run the program several times to answer this question.)
+The getValue method will get you the integer value of the card alone in an output statement,
+whereas the getPointValue method will get you ( ( integer value of the card ) - 1 ), as an integer, in an output statement.

@@ -1,0 +1,42 @@
+Feb. 27th, 2024
+
+Applying logical operators to a condition will then evaluate it
+for it's boolean value, which is either true or false
+- ! is the unary logical operator (aka logical complement || logical NOT), and operates only on one conditition
+- && and || are logical operators used to join two or more conditions together
+
+The operand to the logical NOT is one condition (that evaluates to true or false)
+
+ex. 1:
+for (int i = 0; i < 100; i++){
+    // code to be repeated
+}
+There are 3 parts to the for loop:
+1. declaration and initialization of an loop control variable (an int counter)
+int i = 0; // we use the variable i by convention
+2. condition
+i < 100 // as long as the condition is true, keep looping
+3. i++ // this increments i by 1 same as i = i +1
+
+ex. 2:
+int value = 20;
+
+for int( i = 0; i < 5; i++ );{
+    value = value + 100;
+}
+
+ex. 3:
+given:
+Scanner scanner = new Scanner(System.in);
+
+int sumInputs = 0;
+for ( int i = 0; i < 3; i++ ){
+    System.out.println( "Enter a number: " );
+    int tempInput = scanner.nextInt();
+    sumInputs += tempInput;
+}
+System.out.println( "The sum is " + sum);
+
+
+- Infinite loops are bad, but can be used to repeat until a break is reached
+
