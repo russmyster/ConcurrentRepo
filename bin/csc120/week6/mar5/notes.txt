@@ -1,0 +1,16 @@
+Mar. 5th, 2024
+
+Java keyword: "this"
+- this is a java keyword that acts as a reference variable, but it doesn't need instantiation
+- this holds a memory address of an object
+- this can be used in any class we write, but in csc120, 
+it will most often be used in the programmer defined class
+
+ex) 
+// Application class
+
+public static void main(String[] args){
+    PhoneBookEntry [...]
+    // REFER TO PHOTO GALLERY OF THIS SLIDE
+}
+

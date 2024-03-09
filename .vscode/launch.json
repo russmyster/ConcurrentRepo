@@ -6,6 +6,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StringManipulation",
+            "request": "launch",
+            "mainClass": "personal.practice.StringManipulation",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "String",
+            "request": "launch",
+            "mainClass": "personal.practice.String",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "TimeElapsed",
+            "request": "launch",
+            "mainClass": "personal.practice.OverloadedConstructorsTEST.TimeElapsed",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "TimeElapsed",
+            "request": "launch",
+            "mainClass": "personal.practice.OverloadedConstructors.TimeElapsed",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "LogicalOperators",
+            "request": "launch",
+            "mainClass": "personal.practice.LogicalOperators",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "StringMethod",
+            "request": "launch",
+            "mainClass": "personal.practice.StringMethod",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "DataOnly",
+            "request": "launch",
+            "mainClass": "csc120.week6.mar5.DataOnly",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "CelsiusToFahrenheit",
+            "request": "launch",
+            "mainClass": "personal.homebrew.CelsiusToFahrenheit.CelsiusToFahrenheit",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
             "name": "AttendanceExample",
             "request": "launch",
             "mainClass": "csc120.zybooks.chapter4.PeopleCounter.AttendanceExample",
