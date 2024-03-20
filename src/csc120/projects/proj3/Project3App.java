@@ -20,7 +20,8 @@ public class Project3App {
 
         // For loop generates (array elements, aka) questions 1 - 15, and displays them
         for (int i = 0; i < questions.length; i++){
-        questions[i] = new Question(); // Instantiates new questions as objects, numbered 1 - 15
+        // Instantiates new questions as objects, numbered 1 - 15
+        questions[i] = new Question(); // Each question 1 - 15 can be called and used!
 
         System.out.println("Question " + (i + 1) + ": "     // Question number display
                           + questions[i].toString() + " "   // Question display
