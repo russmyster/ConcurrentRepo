@@ -1,6 +1,6 @@
 package personal.practice.OverloadedConstructors;
 
-public class TimeElapsed {
+public class TimeElapsedApp {
     public static void main(String[] args){
         int hrs;
         int mins;

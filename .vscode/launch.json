@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimpleProject3App",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj3.SimpleProject3App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Project3App",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj3.Project3App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
             "name": "StringManipulation",
             "request": "launch",
             "mainClass": "personal.practice.StringManipulation",
