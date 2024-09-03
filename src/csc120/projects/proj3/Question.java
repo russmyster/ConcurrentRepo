@@ -1,20 +1,19 @@
+//package proj3;
 package csc120.projects.proj3;
-// package proj3;
 import java.util.Random;
 
 /**
  * <p>Title: Project 3 - Random addition and subtraction</p>
  * 
- * <p>Description: This program begins by creating a new deck, shuffling the deck,
- * and assigning 3 random cards from it;
- * those assigned cards are shown via a pop-up called a graphical user interface.
- * It then proceeds to display the number "value" written on the card, along with 
- * what suit the card is a part of (also states whether the cards contain a pair or not).
- * Then, it displays the highest "value" between the three cards,
- * along with their point value summation;
- * if their point value summation is greater than or equal to 25 then
- * a player win message is displayed, otherwise a computer win message is displayed.
- * (note: any card past 10-- such as jack, queen, king-- will only be worth 10 points)</p>
+ * <p>Description: This program randomly selects operand's 1 and 2 based on
+ * the randomly selected operator ( '+' or '-' ).
+ * If the addition operator was selected, then operands 1 and 2 are between 0 and 12.
+ * If the subtraction operator was selected, then operand 1 is between 6 and 12,
+ * and operand 2 is less than or equal to the selected operand 1.
+ * There are also methods that give the user the values of operands 1 and 2,
+ * along with which operator was selected.
+ * Moreover, there is a method, determineAnswer(), 
+ * that determines and returns the integer answer to the randomly generated question.</p>
  * 
  * @author Russell Sleeby
  */
@@ -26,8 +25,8 @@ public class Question {
     Random randGen = new Random();
 
     /**
-     * <p>Constructor: Randomly assigns values to instance variables based on
-     * the randomly determined type of operator ( '+' or '-' ).</p>
+     * Constructor: Randomly assigns values to instance variables based on
+     * the randomly determined type of operator ( '+' or '-' ).
      */
     public Question(){
         if ( (randGen.nextInt() % 2) == 0 ) operator = '+';
@@ -43,45 +42,45 @@ public class Question {
     }
 
     /**
-     * <p>getOperand1: gets value of the random operand1</p>
+     * getOperand1: gets value of the random operand1
      * 
-     * @return int
+     * @return returns integer value of operand1
      */
     public int getOperand1(){
         return operand1;
     }
 
     /**
-     * <p>getOperand2: gets value of the random operand2</p>
+     * getOperand2: gets value of the random operand2
      * 
-     * @return int
+     * @return returns integer value of operand2
      */
     public int getOperand2(){
         return operand2;
     }
 
     /**
-     * <p>getOperator: gets character ( '+' or '-' ) of the random operator</p>
+     * getOperator: gets character ( '+' or '-' ) of the random operator.
      * 
-     * @return char
+     * @return returns the character of the operator, either '+' or '-'.
      */
     public char getOperator(){
         return operator;
     }
 
     /**
-     * <p>toString: gets randomized addition or subtraction question</p>
+     * toString method: gets randomized addition or subtraction question.
      * 
-     * @return String
+     * @return returns a string detailing the randomly generated question.
      */
     public String toString(){
         return operand1 + " " + operator + " " + operand2 + " =";
     }
 
     /**
-     * <p>determineAnswer: gets answer to the randomized addition or subtraction question</p>
+     * determineAnswer method: gets answer to the randomized addition or subtraction question.
      * 
-     * @return int
+     * @return returns the integer value of the answer to the randomly generated question.
      */
     public int determineAnswer(){
         if (operator == '+') return operand1 + operand2;

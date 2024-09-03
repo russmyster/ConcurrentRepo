@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Lab6App",
+            "request": "launch",
+            "mainClass": "csc120.labs.lab6.Lab6App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Project4App",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj4.Project4App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
             "name": "SimpleProject3App",
             "request": "launch",
             "mainClass": "csc120.projects.proj3.SimpleProject3App",

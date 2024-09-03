@@ -3,7 +3,7 @@ package csc120.projects.proj2;
 import cardgames.*;
 
 /**
- * <p>Title: Project 2: Manipulating the Card class</p>
+ * <p>Title: Project 2 - Manipulating the Card class</p>
  * 
  * <p>Description: This program begins by creating a new deck, shuffling the deck,
  * and assigning 3 random cards from it;
