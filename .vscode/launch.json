@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "temp",
+            "request": "launch",
+            "mainClass": "csc130.classNotes.sep3.temp",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
             "name": "Test3Examples",
             "request": "launch",
             "mainClass": "personal.practice.test3.Test3Examples",
