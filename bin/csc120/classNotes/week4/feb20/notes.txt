@@ -1,0 +1,69 @@
+public void myMethod(double val) {
+    //TBD
+}
+
+MyClass foo = new MyClass
+
+How do we call this?
+// foo.myMethod(double val);
+
+
+Exercise:
+For each of the following sample method headers for the SomeClass class, write a valid method call. 
+Use the following variables in your answers:
+
+char ch;
+double price = 1.5;
+double total;
+int quantity = 3;
+String otherString = new String("hello");
+SomeClass someVar = new SomeClass(10, 3.14);
+SomeClass otherVar;
+
+a) public char aMethod
+someVar.aMethod();
+// ch = someVar.aMethod();
+
+b) public void bMethod(int num)
+someVar.bMethod(int num);
+// someVar.bMethod(quantity);
+
+c) public double cMethod(int num, double num2)
+someVar.cMethod(int num, double num2);
+// total = someVar.cMethod(quantity, price);
+
+d) public SomeClass dMethod(String str) // we can "return objects," or anything we want, including "SomeClass"!!!
+someVar.dMethod(String str);
+// otherVar = someVar.dMethod(otherString);
+
+
+
+// Ex. To show that Strings are immutable:
+    String food = new String( "Chicken Nouggets" );
+    System.out.println( food );
+    food = food.replace( 'u', 'a' );
+    System.out.println( food );
+
+    String food2 = food;
+    food = food.replace( 'u', 'a' );
+    System.out.println( food );
+    System.out.println( food2 );
+
+    food2 = food;
+    food = food.replace( 'u', 'a' );
+    System.out.println( food );
+    System.out.println( food2 );
+
+    // Ex. 2:
+        String phoneNumber = new String( "317-484-5642" );
+        String newPhoneNumber;
+        newPhoneNumber = phoneNumber.replace('-','.');
+        System.out.println( newPhoneNumber );
+
+    // Ex. 3:
+        String word = new String( "Programming" );
+        String upperCaseWord;
+
+        upperCaseWord = word.toUpperCase();
+        System.out.println( word );
+        System.out.println( upperCaseWord );

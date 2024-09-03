@@ -1,0 +1,46 @@
+    // MOD 3 for columns gives us col #
+    // DIVIDE 3 for rows gives us row #
+
+       // 1 2 3 when mod3
+
+//1    // 0 1 2 when divide 3
+//2    // 3 4 5
+//3    // 6 7 8
+
+    // method that checks whether there are 3 rows, col's or diagonals
+    // that determines if there is a winner
+
+
+    private int[] theBomb = {2, 9, 4, 7, 5, 3, 6, 1, 8}
+
+    private int[] current = new int[9]
+
+    // you can change it to boolean and make it true or false
+
+    piece x = new Piece('x');
+    //if()
+    system.out.println(x.isWinner());
+
+
+    there are many ways to do this,
+    for instance, using a magic square (always adds to 15):
+
+    2 9 4
+    7 5 3
+    6 1 8
+
+    current[i] - theBomb[entry]
+
+otherwise we will have to do this:
+    5 choose 3 gives us 10 permutations or checks for winning status
+    16 checks in total 
+
+
+    HINT:
+    recursie algorithm (code calls itself) 
+    is what was used in the above magic square code
+
+    easiest way (right now) straightforward:
+    have a separate board class, or not, then you can check rows and columns
+    --> if x is a winner is all 3 in right, down and diagonal possibility is true
+    

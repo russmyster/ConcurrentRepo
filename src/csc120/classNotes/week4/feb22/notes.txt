@@ -1,0 +1,15 @@
+A condition evaluates a proposition to a boolean, true or false.
+
+A nested if/else statement
+- CHECKS EVERY CODE BLOCK
+- Only one code block gets executed
+- The else is a catchall statement that will be executed IF no other statements are true
+
+getValue() and toString() are called accessor methods
+- 
+our labs and projects will involve
+the programmer defined class, (MOST WORK), like the shuffle methods
+and the application class (less work) 
+
+string does not need to be instantiated 
+for it to receive the return value from the toString method

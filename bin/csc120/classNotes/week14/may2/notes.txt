@@ -1,0 +1,118 @@
+May 2nd, 2024
+
+**MUST LEARN FOR-EACH AND**
+
+Switch statements:
+- alternatives to nested if/else statements
+- consider a program to ask a user to enter the date, MM/DD/YYYY
+- program should get the first 2 chars and convert the two char month string into an integer
+ex)
+Scanner scnr = new Scanner(System.in);
+System.out.println("Enter the date in the form MM/DD/YYYY");
+String dateString = scanner.nextLine();
+int month = Integer.parseInt(dateString.substring(0,2));
+String monthString;
+if(month == 1)
+    monthString = new String("December");
+else if (month == 2)
+    monthString = new String("February");
+else
+    monthString = new String("Error");
+
+
+BUT WE CAN USE SWITCH STATEMENTS INSTEAD:
+
+ex)
+switch(month) // if month == 1; 
+{
+    case 1:
+        monthString = new String("January");
+        break; // takes you out of the switch
+    case 2:
+        monthString = new String("February");
+        break;
+    case 12:
+        monthString = new String("December");
+        break;
+    default: // a catch-all "else" if none are true
+        monthString = new String("Error in user input");
+} // end switch
+
+
+- you can compare types int, char, and String using switch statements
+
+- switch format:
+switch(choice) // choice must be of type int,
+{
+    case 0:
+    // code for case 0
+    break;
+    // etc.
+}
+
+    OR
+{
+    case "Monday":
+    // code for case "Monday"
+    break;
+    etc.
+
+}
+
+
+Dragon Curve:
+- pattern created from folding paper again 
+and again and unfold, keeping 90 degrees
+
+- but we can do this recursively
+- wherever you are, add an 
+L and swap the rest of the array before the L you added
+
+L L R L L R R L L L R R L R R
+
+1   3     7                 15
+
+shown by 2^n - 1
+which happens to be 1 less than bit strings
+
+
+More notes:
+- final variables:
+- a constant
+- instance variables can be declared as "final"
+- final variables can only be assigned once (or compiler error)
+The value is maintained for the rest of the program.
+- unlike instance variables, whcih are initialized in the constructor,
+final variables are usually initialized at declarations
+- by convention, constants are in all capitals
+
+ex)
+public class SchoolDay{
+    private final int HOURS_IN_A_DAY = 24;
+    // private int hoursInADay = 24 <-- just like this!
+    // other class constructors and methods
+    
+    public SchoolDay(){
+        HOURS_IN_A_DAY = 23; // generates a compiler error
+    }
+}
+
+NOTE: final variables are immutable, so if multiple objects, 
+the variable is separate and points to a different address for each object
+
+Can we move this variable from the OBJECT LEVEL up to the CLASS LEVEL?
+Yes! We can make this final variables "static"
+
+ex)
+public class SchoolDay{
+    private static final int HOURS_IN_A_DAY = 24;
+    // other class constructors and methods
+}
+// this is one of the things that is made to make up for java's 
+// heavy dependency on objects, which can be cumbersome to memory
+
+
+Note: You CAN have static methods
+Question:
+    What would happen if you tried to use a static variable in a for loop?
+    

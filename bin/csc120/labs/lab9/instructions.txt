@@ -1,0 +1,99 @@
+7.24 Lab Assignment #9: Writing the Hand Class
+Objectives
+Process an array of objects
+Write an application class to thoroughly test a data-type class
+Partners
+You may choose your own partner(s).
+
+Overview
+For the first time, you will be writing code for a data-type class that has an array of objects as an instance variable.
+
+Assignment
+There are four classes in this assignment. Two of them, the Card class and the Deck class, are complete. You will be adding code to the Hand class and the Lab9App class. The application class already has code that instantiates and shuffles a deck, instantiates a Hand, and deals seven cards from the deck into the hand. Do not change this code; add your code below it.
+
+The Hand class already has instance variables, a default constructor, an insertCard() method, and JavaDoc comments for the other methods you need to write. As with Lab 8, write each method under the corresponding JavaDoc comment, so that it does what the comment says it does.
+
+You must complete each of these methods in the Hand class:
+
+toString() The String returned from this method should match this format:
+
+Card 1: 10 of hearts
+Card 2: 3 of diamonds
+<etc>
+getCards()
+
+replaceCard()
+
+findNumFaceCards()
+
+searchCard()
+
+findLowCard()
+
+replaceLowCard() (Hint: use the findLowCard method in this method)
+
+As you write each method in the Hand class, test it in the application class. Your output should look like the expected output, but of course with randomization your output will likely not exactly match the expected output.
+
+Expected Output
+As stated above, the deck will be shuffled each time you run the program, and so your output should match the format of this output, but it likely won't match the exact output.
+
+Display the cards in the hand:
+Card 1: 8 of hearts
+Card 2: Jack of spades
+Card 3: 3 of clubs
+Card 4: 9 of spades
+Card 5: Ace of spades
+Card 6: 7 of clubs
+Card 7: 7 of spades
+
+Get a copy of the cards array, and display the contents of the copy:
+8 of hearts
+Jack of spades
+3 of clubs
+9 of spades
+Ace of spades
+7 of clubs
+7 of spades
+
+Changing the first card in the copy to the 4 of hearts:
+4 of hearts
+Jack of spades
+3 of clubs
+9 of spades
+Ace of spades
+7 of clubs
+7 of spades
+
+Display the cards in the hand:
+Card 1: 8 of hearts
+Card 2: Jack of spades
+Card 3: 3 of clubs
+Card 4: 9 of spades
+Card 5: Ace of spades
+Card 6: 7 of clubs
+Card 7: 7 of spades
+
+Replacing the card in position 0 with a deck card and display the cards in the hand:
+Card 1: Queen of clubs
+Card 2: Jack of spades
+Card 3: 3 of clubs
+Card 4: 9 of spades
+Card 5: Ace of spades
+Card 6: 7 of clubs
+Card 7: 7 of spades
+
+The hand has the Ace of spades.
+
+There are 2 face card(s) in the hand.
+
+Replacing the lowest card with a deck card and display the cards in the hand:
+Card 1: Queen of clubs
+Card 2: Jack of spades
+Card 3: 3 of clubs
+Card 4: 9 of spades
+Card 5: Jack of clubs
+Card 6: 7 of clubs
+Card 7: 7 of spades
+
+Grading
+There is no output matching on this assignment - the entire grade will be determined by calling the methods you write and determining whether they perform their tasks correctly.

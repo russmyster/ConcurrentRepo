@@ -1,0 +1,127 @@
+Apr. 9th, 2024:
+
+copying an array
+
+declare a second array of the same type, and length of the first array
+
+char[] letters;
+
+char[] letters = new 
+
+ex)
+private double[] grades;
+//initialize array elements in constructor
+
+public MyClass(){
+    name = new String("none");
+    grades = new double[3];
+    grades[0] = 0;
+    grades[1] = 0;
+    grades[2] = 0;
+}
+
+ex)
+private double[] grades;
+//initialize array elements in constructor
+private String courseName;
+
+public MyClass(){
+    courseName = "CSC 120";
+    grades = new double[11];
+    for (int i = 0; )
+
+}
+
+
+an accessor method for arrays
+ex)
+public String getcCourseName(){
+    return courseName;
+}
+public double[] getGrades(){
+    return grades;
+}
+
+// when we return the values, aka "return grades;" 
+// we give user access to private variables
+
+
+// thus we CANNOT simply write "return grades;"
+// we must instead do this:
+
+public double[] getGrades(){
+    double[] gradesCopy = new double[grades.length];
+    for (int i = 0; i < grades.length; i++){
+        gradesCopy[i] = grades[i];
+    }
+    return gradesCopy;
+}
+// this way we are returning a reference variable 
+// that is a COPY of the original array
+// so even if a hacker got the address of it, 
+// they can only change the copied array
+
+
+
+
+consider a mutator method for an array
+ex)
+public void setGrades(double[] theGrades){
+    for(int i = 0; i < grades.length; i++){
+        grades[i] = theGrades[i];
+    }
+}
+
+public void setGrades(double[] theGrades){
+    for(int i = 0; i < grades.length; i++){
+        gradesCopy[i] = grades[i];
+    }
+    for(int i = 0; i < gradesCopy.length; i++){
+        gradesCopy[i] = theGrades[i];
+    }
+}
+
+ex) suppose MyClass has a method, convertToString
+// convertToString takes a char array as a parameter, and converts the
+// content of the array into a String, then returns the String
+// what is the method header?
+
+public String convertToString(char[] anArray){
+    //TBD
+}
+// the parameter type in a method header is a char array
+// the parameter name is the programmer's choice ofc
+
+ex)
+public String convertToString(char[] anArray){
+    String str = "";
+    for (int i = 0; i < anArray.length; i++){
+        str += aArray[i];
+    }
+    return str;
+}
+
+
+ex) // FULL EXAMPLE
+// say... in application class, AppClass:
+
+public static void main(String[] args){
+    char[] letters = {'F', 'r', 'i', 'd', 'a', 'y'};
+    MyClass mc = new MyClass();
+
+    //call to convertToString method
+    String word = mc.convertToString(letters);
+
+    // output the String
+    System.out.println(word);
+}
+
+// in the data-type class, MyClass:
+
+public String convertToString(char[] anArray){
+    String str = "";
+    for (int i = 0; i < anArray.length; i++){
+        str += aArray[i] + " ";
+    }
+    return str;
+}

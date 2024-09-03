@@ -1,0 +1,130 @@
+Mar. 28th, 2024
+
+Method Header:
+- Accessor
+- Return type (could be void)
+- Method name
+- Parameters
+--> Declare a variable/object (e.g. int userNum
+                                    String userString
+                                    Phonebook userPhonebook)
+(a) Data type
+(b) Variable name
+
+Constructor Header:
+- Must be a public accessor
+- No return type (not even void)
+- Must have the same name as class
+- Parameters
+--> Initializing instance variables
+i.e. values exist in order to instantiate new objects later on 
+with the instance variables listed within the constructor
+
+
+CONT LECTURE AFTER DRAGON CURVE:
+
+Arrays:
+- A container OBJECT
+--> you must to declare and then create (i.e. instantiate) arrays
+--> that holds data (values) of a single type
+--> allows you to store and access a large number of values conveniently
+
+Declaring arrays in Java:
+
+dataType[] arrayName;
+
+*dataType can be a primitive type (int, char, double, etc.) or an object
+*arrayName is an identifier
+
+declare an array W/O INSTANTIATATION:
+ex) int[] arr;
+
+*notice, there is no size, so array IS NOT INSTANTIATED
+--> The hexadecimal reference address for the array object exists
+BUT THE OBJECT DOES NOT EXIST WITHIN MEMORY
+
+
+when you want to INSTANTIATE AN ARRAY:
+ex) arr = new int[10];
+// creates an array with a size of 10
+
+ex) double[] data;
+// data is an array that may hold values of type double
+// NOT INSTANTIATED
+
+ex) data = new double[10];
+//length of the array data is now 10
+// once the lenght of array is defined, it cannot be changed
+
+ex)  int[] age;
+     age = new int[5]
+
+     OR
+
+     int[] age = new int[5];
+     // you assign the newly created integer array object (of length 5)
+     // to the value "age," which is of an integer array data type
+
+* You can access elements of an array by using indices
+- First element of an array will have an index of 0 
+--> # of indices in an array = length - 1
+--> if an array has a length of n, the last element will be arrayName[n-1]
+ex) int[] age = new int[5];
+// the last element is age[4]
+
+
+
+we can also initialize arrays at the time of declaration:
+ex) int[] age = {12, 4, 5, 2, 5};
+// creates & initializes an array (during declaration)
+// initialized w/ specific value, cannot change the length of age[]
+
+age[0] = 12
+age[1] = 4
+age[2] = 5
+age[3] = 2
+age[4] = 5
+
+~tarvel(?) has cool generative art
+
+Ex of a program to print elements in an array:
+
+int[] age = {12, 4, 5, 2, 5}
+
+for ( int i = 0; i < 5; i++){
+    System.out.printlnm( "Element at index " + i + ": " + age[i] );
+}
+
+* You can access and alter array elements via the numeric index
+ex) age[0] = 24 // change the first element to 34
+ex) age[2] = 14; // change the third element to 14
+
+
+
+Demonstrate that an array is an OBJECT, not a primitive:
+ex)
+
+int[] arr = {1, 1, 2, 5, 14};
+System.out.println( arr ); // prints memory address, UNLIKE STRING
+
+*therefore, an array is an immutable object
+- to find the length of an array, you can use .length
+- this is NOT a method, hence no () after the word length
+
+
+***classes contain two things: FIELDS, and METHODS
+- if something is immutable, like arrays and strings,
+--> no need to make it private, since it cannot be changed
+
+ex) System.out.println( arr.length );
+
+
+Write a program that creates an int array of size 5, 
+asks user to input integer values, then prints out values
+
+Scanner scnr = new Scanner(System.in)
+//int[] arr = new int[5];
+
+int[] arr;
+while (int i = 0; ++i)
+

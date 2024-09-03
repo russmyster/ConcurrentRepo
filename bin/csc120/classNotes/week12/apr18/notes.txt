@@ -1,0 +1,171 @@
+April 18th, 2024
+
+Deal 6 cards and store each Card reference in the cards array?
+
+for(int i = 0; i < cards.length; i++)
+    cards[i] = theDeck.dealCard;
+
+
+The Deck class:
+- How can we design it ourselves?
+
+- We need to store the 52 cards in some instance variable(s)
+- We also need to keep track of how many cards remain in the deck
+--> This number starts at 52 and decrements every time a card is delt
+
+- There will be numbered 0-51, to create 52 unique cards
+--> The constructor should create 52 unique Card objects
+
+ex)
+public class Deck{
+    private Card[] cards;
+    private int numCards;
+
+    public Deck(){
+        this.numCards = 52;
+        this.cards = new Card[52];
+
+        for (int i = 0; i < this.cards.length; i++){
+            this.cards[i] = new Card(i);
+            // this element is a reference to this new Card objects
+        }
+    }
+
+    public dealCard(){
+
+    }
+}
+
+- Where do we deal a card from for the dealCard method
+--> we should deal the cards from the BOTTOM of the deck FIRST
+--> avoids a lot of hassle when coding and referring back to
+the numCards left in the deck after we deal one or more..
+
+
+ex) 
+public class Deck(){
+    public Card dealCard(){
+        this.numCards = this.numCards - 1;
+        // decrement numCards bc we just dealt one of them
+        return this.cards[this.numCards];
+        // OR just in one line,
+        // return --this.numCards[this.numCards];
+    }
+}
+// When the first Card is dealt, decrememnt numCards to 51,
+// then return the Card reference in index 51
+// repeat for further repeats...
+
+
+- The value null refers to an empty memory location
+- After array of Card objects is first instantiated, but before any
+Cards are put in the array, each element is null
+- Similarly, when you declare any reference variable, it's value is null
+before you assign the address of an object
+- When the number of cards in the deck is 0, there are no more cards to deal,
+so the dealCard method cannot return a reference to a Card object.
+It must return null.
+
+- Design the hand class:
+
+- The hand class is similar to a poker hand, 
+but can hold a varying number of card
+- Constructor:
+--> We want the app. class to be able to specify the number of cards
+that will be in the hand and need 
+// texas holdem have 7 cards, so you are "holding 2" lol
+
+ex)
+public Card Hand(int size){
+    this.numCards = 0; // 0 Cards in the array
+    this.cards = new Card[size];
+    return cards;
+}
+// numCards will change when a Card is added to the Hand,
+// or if a Card is removed from the Hand,
+// numCards should increment, or decrement
+// NOTE: Size of the array is not stored in it's own instance variable,
+// because it can always be found with using cards.length
+
+ex) Write a method, insertCard, that accepts the reference to a Card object
+// My code:
+public void insertCard(Card userCard){
+    this.Deck += new Card[userCard];
+}
+
+// Zucker's code:
+public void insertCard(Card userCard){
+    if(this.numCards < this.cards.length){
+        this.cards[numCards] = aCard;
+        this.numCards++;
+        // OR just, in one line
+        // this.cards[numCards++] = aCard;
+        // which would use it, then increment it..
+
+    }
+    this.Deck += new Card[userCard];
+}
+// Store the passed in CArd reference in the next available location
+// in the array (think about how you know what the next available location is)
+// Check to make sure the array isn't full
+
+// numCards is initialized to 0 (in the constructor).
+// Every time the insertCard method is called, numCards is increased by 1
+// 
+
+- Suppose the Hand constructor is called w/ an argument of 5,
+- When the insertCard method is called, a Card reference is created,
+and numCards is increased by 1 for each iteration.. 
+UNTIL it reahes 5, 
+because bc ( numCards < this.cards.length ) will evaluate to false.
+
+ex) Write a toString method for the Hand class that returns a String 
+containing the values and suits for all the cards in the Hand.
+For ex:
+4 of clubs
+7 of diamonds
+Jack of hearts
+3 of clubs
+6 of spades
+
+public String toString(){
+    String temp = "";
+    for (int i = 0; i < this.numCards; i++)
+        temp += this.cards[i].toString() + "\n";
+    return temp;
+}
+// What happens if we use cards.length instead of this.numCards
+// if you didn't use all of the array spaces, then you will get errors...
+// We'd be attempting to call the toString method on null, 
+// that would cause a null pointer exception error
+
+question) toString is located in which class from the below code?
+this.cards[i]toString()
+// Answer: the Card class, as shown by the "this.cards" part of the code
+
+
+ex) Write a method, numFaceCards, that counts the number of face cards
+in the hand. Recall that a face card is a Jack(11), Queen(12), or King(13).
+
+Write a method, replace, that replaces a card in the hand at a desired
+position-- what should the method accept? What should it return?
+Answer: The replace method should accept a Card reference, and the
+position that should be replaced
+
+The replace method doesn't require a return value, but it could return
+a boolean to indicate whether the swap was successful. 
+Why would the swap not be successful?
+Answer: If you are trying to return a card of a number that doesn't
+exist in the index ranges of your Hand
+
+
+public int numFaceCards(){
+    for (int i = 0; i < this.)
+}
+
+
+
+
+
+
+-- Teacher code for shuffle method --
