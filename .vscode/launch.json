@@ -6,6 +6,111 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Test3Examples",
+            "request": "launch",
+            "mainClass": "personal.practice.test3.Test3Examples",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Test3Examples",
+            "request": "launch",
+            "mainClass": "personal.practice.Test3Examples",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "FindSum",
+            "request": "launch",
+            "mainClass": "personal.practice.FindSum",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Project6App",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj6.Project6App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "RecursiveDragonCurve",
+            "request": "launch",
+            "mainClass": "csc120.classNotes.week14.may2.RecursiveDragonCurve",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Switcheroo",
+            "request": "launch",
+            "mainClass": "csc120.classNotes.week14.may2.Switcheroo",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Lab9App",
+            "request": "launch",
+            "mainClass": "csc120.labs.lab9.Lab9App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Project5App",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj5.Project5App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Project5Testing",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj5.Project5Testing",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "ArrayFunDriver",
+            "request": "launch",
+            "mainClass": "csc120.classNotes.week12.apr18.ArrayFun.ArrayFunDriver",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "ArrayFunDriver",
+            "request": "launch",
+            "mainClass": "csc120.classNotes.week12.apr18.ArrayFunDriver",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Project3App",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj31.Project3App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Project4App",
+            "request": "launch",
+            "mainClass": "csc120.projects.proj3.Project4App",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "Temp",
+            "request": "launch",
+            "mainClass": "csc120.week9.mar28.Temp",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
+            "name": "DragonCurve",
+            "request": "launch",
+            "mainClass": "csc120.week9.mar28.DragonCurve",
+            "projectName": "java_a720e17a"
+        },
+        {
+            "type": "java",
             "name": "Lab6App",
             "request": "launch",
             "mainClass": "csc120.labs.lab6.Lab6App",

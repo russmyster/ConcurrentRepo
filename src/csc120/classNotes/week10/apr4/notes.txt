@@ -1,0 +1,60 @@
+Apr. 4th, 2024
+
+to access an index of an array:
+heights[8];
+
+int height = heights[8];
+
+int twoHeights = heights[4] + heights[6];
+// adds the values held in the indexes of the array at the positions directed
+
+array = new dataType[size]
+
+
+
+you can manually insert values into an array:
+heights[0] = 68
+heights[1] = 61
+
+to start off with, they don't have values
+
+
+we can use initalizer lists, the general format:
+int[] diceValues = {1, 2, 3, 4, 5, 6};
+
+but we CANNOT DO THIS:
+int[] diceValues;
+diceValues = {1, 2, 3, 4, 5, 6}
+
+// NOTE: this one-line shortcut initalizes the array after counting it's elements
+// array's are IMMUTABLE you CANNOT remove sizes of aspects of an array
+
+
+
+you can either do:
+int height = heights[8];
+OR
+int[] diceValues = {1, 2, 3, 4, 5, 6};
+
+ex)
+//int days = days[8];
+
+    int[]days; // declare an int array named "days"
+    days = new int[12]; // instantiate the days array to hold 12 ints
+    days[0] = 31;
+    days[1] = 28;
+
+
+you can create an array and then have user input the size of the array..
+for loops are generally the best loop to use for iterating through an array
+-> the values in the for loop correspond to the index of elements in the array
+
+
+for (int i = 0; i < values.length; i++){
+    values[i] = 0;
+}
+
+for (int i = 0; i < values.length; i++){
+    System.out.println(values[i]);
+}
+

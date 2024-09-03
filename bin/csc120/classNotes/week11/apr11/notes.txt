@@ -1,0 +1,163 @@
+Apr. 11th, 2024
+
+Study for Exam 2:
+- arrays, loops, and putting them into methods and classes,
+--> includes for, while, and do while loops
+- study passing arrays back and forth, and calling arrays
+- relational operators
+- argument passing, method headers, etc.
+** mostly for arrays and loops, WITH A LOT OF REPEATS
+** practice passing arrays of arrays (we'd need 2 for-loops)
+
+Class Notes:
+4 instance variables in student class:
+-studentId
+-firstName
+-lastName
+-grades
+
+** we must COPY arrays whenever we return arrays
+
+** AND we must COPY when we mutate arrays
+this.grades = sGrades;
+// changes the location that the object is pointing to
+// onto a totally new array, given by sGrades,
+// the original grades array becomes lost, and is garbage collected l8r
+
+double[] grades;
+// stores nothing YET
+
+grades = new double[4];
+// 4 contiguous memory locations for doubles
+// currently holds nothing
+
+
+Card[] cards;
+// nothing stored YET, and nothing can be scored
+
+cards = new Card[6];
+// 6 contigious memory locations
+
+ex) // assuming that theDeck has already been instantiated...
+cards[0] = theDeck.dealCard();
+// dealCard returns a card object
+
+ex) // How to deal 6 cards and store each of them in a refernece variable?
+for( int i = 0l i < cards.length; i++){
+    cards[i] = theDeck.dealCard;
+    //remember NOT <= cards.length, or you will get null pointer error
+}
+// the elements at each index (0-5) of the cards array holds
+// the memory address of a unique Card object
+
+**
+// constructor initializes instance variables
+
+// you can call methods on objects, 
+// even if the objects are elements in the array
+
+ex)
+
+cards[2].getValue();
+
+
+
+OTHER LOOPS:
+**
+while, and do while loops
+
+- while and do while loops do not increment 
+or initialize a loop control variable
+
+ex)
+while([put condition here]){
+    // body of the loop that gets executed repeatedly
+    // while the condition evaluates to true
+}
+// we can exit this loop via break
+
+ex)
+// Given:
+Scanner scanner = new Scanner(System.in);
+
+// Write a while loop that continues to prompt the user to enter a number
+// When the user enters a 0, stop looping
+// Find the sum of all the numbers entered by the user. Display the sum
+int userInt;
+int totalInt = 0;
+
+System.out.println("Enter a number, or 0 to quit");
+userInput = scanner.nextInt;
+
+while(userInt != 0){
+    totalInt += userInt; // same as totalInt = totalInt + userInput
+    System.out.println("Enter a number, or 0 to quit");
+    userInt = scnr.nextInt();
+} System.out.println("The sum is " + totalInt);
+
+ex) // do while loop
+do{
+    // body of the loop tht gets executed repeatredly
+    // while the contition evalutates to true
+}
+while([put condition here]);
+// PUT A SEMI-COLON AFTER THE CONDITION, UNLIKE W/ WHILE LOOPS
+
+
+ex)
+// Given:
+Scanner scanner = new Scanner(System.in);
+
+// Write a do while loop that continues to prompt the user to enter a number
+// When the user enters a 0, stop looping
+// Find the sum of all the numbers entered by the user. Display the sum
+int userInt;
+int totalInt = 0;
+
+do{
+    System.out.println("Entera number, or 0 to quit);
+    userInt = scanner.nextInt;
+    totalInt += userInt; // same as totalInt = totalInt + userInput;
+}
+while(userInt != 0);
+
+System.out.println("The sum is " + totalInt);
+
+
+
+BEST PRACTICES:
+- use a for loop if you know number of times you want to execute loop
+- use a while or do-while loop if the number of times you want to loop
+is undetermined until the program is actually executed. For example,
+asking the user to keep entering numbers, or 0 to quit. In this case,
+the user input dictates how many times the loop executes.
+
+
+ex)
+// this method approaches a number, asymptotically
+public static void main(String[] args){
+    System.out.println("What num would you like the sqrt of?");
+
+    double num = scnr.nextDouble();
+    double root = num / 2; // you can remove the division, just helps save a step
+
+    while( root * root - num > 0.00001 ) 
+    // while the diff. between my current value, squared, is very small
+        root = ( root + num / root ) / 2;
+
+    System.out.println("The sqrt of " + num + " is " + root);
+
+    /* // code that is not in java...
+    root = num/2;
+    while( root * root - num > 0.00001){
+        root = (root + num/root) / 2;
+        System.out.println(root);
+    */
+
+
+    }
+}
+
+( 7/2 + 7/(7/2) ) / 2
+
+[ ( 91/2 + 91/(91/2) ) / 2 ] REPEAT UNTIL REACHES A LIMIT ~= 9.54;
